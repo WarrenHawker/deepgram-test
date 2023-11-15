@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main>
+      <h1 class="title">Speech to text app</h1>
+      <section class="audio-section">
+        <div class="input-container">
+          <label for="audio">Audio File URL</label>
+          <input type="text" name="audio" id="audio-input" />
+        </div>
+        <div>
+          <label>Playback audio file</label>
+          <audio controls id="audio-playback"></audio>
+        </div>
+      </section>
+
+      <section class="text-section">
+        <button id="btn-convert">Convert to Text</button>
+        <div class="input-container">
+          <label for="text">Generated text </label>
+          <textarea name="text" id="text-display" disabled></textarea>
+        </div>
+      </section>
+    </main>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+/* css variables */
+:root {
+  --box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  --blue: #083d77;
+  --light-blue: #57c6d4;
+  --green: #67dabf;
+}
+
+/* css resets */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 70%;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+label,
+input,
+audio,
+textarea {
+  display: block;
+  margin: auto;
+  font-size: 16px;
+  width: 100%;
+}
+
+/* main styles */
+main {
+  width: 400px;
+  height: 500px;
+  margin: 2em auto;
+  border: 4px solid var(--blue);
+  border-radius: 10px;
+  padding: 1em;
+  box-shadow: var(--box-shadow);
+  background: var(--light-blue);
+  background: radial-gradient(circle, var(--light-blue) 0%, var(--green) 35%);
+}
+
+.title {
+  margin-top: 0;
+  text-align: center;
+  color: var(--blue);
+}
+
+section {
+  margin-bottom: 2em;
+}
+
+.input-container {
+  margin-bottom: 2em;
+}
+
+label {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: var(--blue);
+}
+
+#audio-input {
+  border: 2px solid var(--blue);
+  border-radius: 5px;
+  padding: 0.25em;
+}
+
+#btn-convert {
+  display: block;
+  margin: auto;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  border: 3px solid var(--blue);
+  color: var(--blue);
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#btn-convert:hover {
+  transform: scale(1.1);
+}
+
+#text-display {
+  resize: none;
+  height: 150px;
+  border: 2px solid var(--blue);
+  border-radius: 10px;
+  padding: 0.5em;
+}
